@@ -1,0 +1,50 @@
+//- .mega-nav
+.wrapper
+	nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+		.container
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#main-nav")
+					span.sr-only Toggle Navigation
+					i.fa.fa-bars
+				a.navbar-brand.navbar-logo(href="http://www.listingconnect.com/", target="_blank")
+					img(src="/images/logo-big.png", alt="ListingConnect")
+			#main-nav.navbar-collapse.collapse.navbar-mega-menu
+				ul.nav.navbar-nav.navbar-right
+					//- li.dropdown
+					//-   a.dropdown-toggle(href="#", data-toggle="dropdown")
+					//-     | HOME
+					//-     i.fa.fa-angle-down
+					//-   ul.dropdown-menu(role="menu")
+					//-     li
+					//-       a(href="index.html") Home v1
+					//-     li
+					//-       a(href="index-v1_dark-header.html") Home v1 Dark Header
+					li
+						a(href="/index.html") Blog Home
+					li
+						a(href="http://www.listingconnect.com/", target="_blank") About ListingConnect
+					//- li
+					//- 	a(data-toggle="modal", data-target="#featuresModal") Sellers
+					//- 		//- span.label.label-danger.label-main-nav NEW
+					//- li
+					//- 	a(data-toggle="modal", data-target="#featuresModal") Buyers
+					//- li.dropdown
+					//- 	a.dropdown-toggle(href="#", data-toggle="dropdown")
+					//- 		| Agents
+					//- 		i.fa.fa-angle-down
+					//- 	ul.dropdown-menu(role="menu")
+					//- 		li
+					//- 			a(data-toggle="modal", data-target="#featuresModal") Features
+					//- 		li
+					//- 			a(data-toggle="modal", data-target="#pricingModal") Pricing
+					//- li.dropdown
+					//- 	a.dropdown-toggle(href="#", data-toggle="dropdown")
+					//- 		| About
+					//- 		i.fa.fa-angle-down
+					//- 	ul.dropdown-menu(role="menu")
+					//- 		li
+					//- 			a(data-toggle="modal", data-target="#aboutModal") What Is ListingConnect?
+					//- 		//- li
+					//- 		//-   a(href="/faq.html") Frequently Asked Questions
+					//- 		li
+					//- 			a(data-toggle="modal", data-target="#supportModal") Contact Us

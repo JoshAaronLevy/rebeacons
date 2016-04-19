@@ -1,0 +1,114 @@
+extends templates/default.jade
+
+block header
+	include templates/header.jade
+
+//- block title
+
+block body
+	.page-content
+		.container
+			script.
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-76455856-1', 'auto');
+				ga('send', 'pageview');
+			// Google Tag Manager
+			noscript
+				iframe(src='//www.googletagmanager.com/ns.html?id=GTM-K3ZLZJ', height='0', width='0', style='display:none;visibility:hidden')
+			script.
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-K3ZLZJ');
+			// End Google Tag Manager
+			.heading-blog
+				h2.section-heading BLOG
+				hr
+			.row
+				#fb-root
+				script.
+					(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1025450637474397";
+					fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				.fb-like.mr5(data-href='https://developers.facebook.com/docs/plugins/', data-layout='button', data-action='like', data-show-faces='false', data-share='true')
+				a.twitter-follow-button(href='https://twitter.com/ListingConnect', data-show-count='false') Follow @ListingConnect
+				script.
+					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+				.col-md-9
+					// BLOG ENTRIES
+					.blog.medium-thumbnail.margin-bottom-30px
+						// blog post
+						article.entry-post
+							header.entry-header
+								h2.entry-title
+									a(href='posts/3-Reports-To-Ask-An-Agent-For.html') 3 Reports Every Buyer Or Seller MUST Ask An Agent For
+								.meta-line.clearfix
+							.entry-content.clearfix
+								.row
+									.col-sm-1
+										figure.featured-image
+											//- a(href='post-sample.html')
+											.post-date-info.clearfix
+												span.post-month APR
+												span.post-date 15
+												span.post-year 2016
+											//- img.img-responsive(src='assets/img/blog/buildings-med.jpg', alt='featured-image')
+									.col-sm-9
+										.excerpt
+											p
+												| When meeting with a prospective Real Estate Agent for the first time, you are undoubtedly going to have a lot of questions. And a good agent is going to be able to provide a wide variety of reports. But it's hard to know which ones are the most helpful...
+											p.read-more
+												a.btn.btn-primary(href='posts/3-Reports-To-Ask-An-Agent-For.html')
+													| Read More
+													i.fa.fa-arrow-right.ml5
+						// end blog post
+						hr
+					.blog.medium-thumbnail.margin-bottom-30px
+						// blog post
+						article.entry-post
+							header.entry-header
+								h2.entry-title
+									a(href='posts/7-Best-SMART-Home-Upgrades.html') 7 Best Smart Home Upgrades
+								.meta-line.clearfix
+							.entry-content.clearfix
+								.row
+									.col-sm-1
+										figure.featured-image
+											//- a(href='post-sample.html')
+											.post-date-info.clearfix
+												span.post-month APR
+												span.post-date 10
+												span.post-year 2016
+											//- img.img-responsive(src='assets/img/blog/buildings-med.jpg', alt='featured-image')
+									.col-sm-9
+										.excerpt
+											p
+												| We live in an interconnected world that has transformed almost every aspect of our lives. This interconnectivity has inevitably made its way into common household applications. There are many ways to convert your home to a SMART Home...
+											p.read-more
+												a.btn.btn-primary(href='posts/7-Best-SMART-Home-Upgrades.html')
+													| Read More
+													i.fa.fa-arrow-right.ml5
+						// end blog post
+						hr
+					// END BLOG ENTRIES
+					//- ul.pager
+					//- 	li
+					//- 		a(href='#') Previous
+					//- 	li
+					//- 		a(href='#') Next
+				.col-md-3
+					//- include sidebar
+					.widget.mt20.mb20
+						script(async='', src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+						// Blog Home
+						ins.adsbygoogle(style='display:inline-block;width:300px;height:600px', data-ad-client='ca-pub-4950211747544966', data-ad-slot='2750871536')
+						script.
+							(adsbygoogle = window.adsbygoogle || []).push({});

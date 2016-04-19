@@ -1,0 +1,29 @@
+{
+  "name": "listingconnect.github.io",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "globby": "^4.0.0",
+    "jade": "^1.8.2",
+    "jade-cli": "^0.1.1",
+    "jstransformer-markdown": "^1.1.0",
+    "marked": "^0.3.5",
+    "pug": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "./build-markdown.sh ./posts ./templates/post.jade",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ListingConnect/listingconnect.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ListingConnect/listingconnect.github.io/issues"
+  },
+  "homepage": "https://github.com/ListingConnect/listingconnect.github.io#readme"
+}
